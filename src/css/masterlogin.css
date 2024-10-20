@@ -1,0 +1,389 @@
+:root{
+    --primary-color: #71d3da;
+    --lil_primary:#b2faff;
+    --secondary-color: #e2e2e2;
+    --w:#fff;
+    --g:#636363;
+    --light_g:#bdbdbd;
+    --icon:#ccc;
+    --dark-primary-color: #51b7be;
+    --dark-white:#d2f1f3;
+    --b:#0b1214;
+    --main-color:rgb(4, 153, 223);
+}
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+@font-face {
+    font-family: "PressStart2P"; 
+    src: url("press-start-2p/PressStart2P.ttf") format("truetype"); 
+  }
+body{
+    background-color: var(--b);
+    font-family: "M PLUS 1 Code", monospace;
+    height: 100vh;
+    
+
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    font-family: "PressStart2P", sans-serif; 
+    padding: 20px;
+    margin: 3px;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+header .muted {
+    text-decoration: line-through;
+  }
+
+
+
+header h1 a{
+    text-shadow: 10px 0px 20px var(--dark-primary-color), 0px 0px 40px var(--dark-primary-color), 0px 0px 80px var(--dark-primary-color);
+    color: var(--w);
+    text-decoration: none;
+}
+header ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    border: 1px solid transparent;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+header ul li:hover{
+    border: 1px solid var(--primary-color);
+    transition: 0.2s ease-in-out;
+}
+
+header ul li a{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px var(--dark-primary-color), 0px 0px 20px var(--dark-primary-color), 0px 0px 40px var(--dark-primary-color);
+    color: var(--w);
+    font-size: 1em;
+    font-weight: 600;
+   
+}
+
+header .register{
+    background-color: transparent;
+    color: var(--dark-primary-color);
+    border: 1px solid transparent;
+    padding: 20px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+header button{
+    border: 1px solid transparent;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-shadow: 10px 0px 20px var(--dark-primary-color), 0px 0px 40px var(--dark-primary-color), 0px 0px 80px var(--dark-primary-color);
+    color: var(--w);
+    align-self: flex-end;
+    background-color: transparent;
+}
+header button:hover{
+    border: 1px solid var(--primary-color);
+    transition: 0.2s ease-in-out;
+}
+
+header .register a{
+    text-decoration: none;
+    color: var(--light_g);
+    font-size: 0.8em;
+    font-weight: 400;
+    padding:6px 0px;
+}
+header .register a:hover{
+    border: 0;
+    border-bottom: 1px solid var(--primary-color);
+    transition: 0.2s ease-in-out;
+}
+
+main{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+   
+    background-color: var(--b);
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+    width: 790px;
+    max-width: 100%;
+    min-height: 580px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+
+}
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+.container span{
+    font-size: 12px;
+
+}
+.container a{
+    color: var(--g);
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+    
+}
+
+.container button{
+    background-color: var(--b);
+    color: var(--w);
+    padding: 10px 45px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.container button:hover{
+    background-color: var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+    transition: 0.3s ease-in-out;
+}
+.container button.hidden{
+    background-color: transparent;
+    border-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+
+}
+.container button.hidden:hover{
+   background-color: var(--primary-color);
+   box-shadow: 0 0 20px var(--primary-color);
+   transition: 0.3s ease-in-out;
+}
+.container form{
+    background-color: var(--b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    height: 100%;
+    gap: 7px;
+    
+}
+.container input{
+    background-color: var(--secondary-color);
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+
+}
+.form_container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    
+}
+.sign_in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    color: var(--w);
+}
+.container.active .sign_in{
+    transform: translateX(100%);
+
+}
+.sign_up{
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+    color: var(--w);
+}
+
+.container.active .sign_up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+    
+
+}
+@keyframes move{
+    0%,49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%,100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.soicial_icons{
+    margin: 20px 0;
+
+}
+.social_icons a{
+    border: 1px solid var(--w);
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width:40px;
+    height: 40px;
+    color: var(--w);
+}
+.toggle_container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    z-index: 1000;
+    border-radius: 150px 0 0 100px;
+    border: 3px solid var(--primary-color);
+
+}
+
+.container.active .toggle_container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+
+}
+.toggle{
+    background-color: var(--b);
+    height: 100%;
+    left:-100%;
+    position: relative;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+    color: var(--w);
+    
+}
+.container.active .toggle{
+    transform: translateX(50%);
+
+}
+
+.toggle_panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+
+}
+.toggle_left{
+    transform: translateX(-200%);
+
+}
+.container.active .toggle_left{
+    transform:translateX(0);
+}
+.toggle_right{
+    right: 0;
+    transform: translateX(0);
+}
+.container.active .toggle_right{
+    transform:translateX(200%);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    margin-top: 5%;
+    border-radius: 4px;
+    gap: 40px;
+    color: var(--w);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+    font-size: 0.7em;
+    font-family: "PressStart2P", sans-serif; 
+}
+footer .item-1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 3px;
+    border-radius: 13px;
+}
+footer .item-1 h1{
+    text-shadow: 0px 0px 10px var(--dark-primary-color), 0px 0px 20px var(--dark-primary-color), 0px 0px 40px var(--dark-primary-color);
+
+}
+footer .item-2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px;
+    margin: 3px;
+    border-radius: 13px;
+    flex-direction: column;
+}
+footer .item-3{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    margin: 3px;
+    border-radius: 13px;
+}
+footer .item-3 a{
+    text-decoration: none;
+    color: var(--w);
+    font-size: 1em;
+    font-weight: 400;
+}
+footer .item-3 a:hover{
+    color: var(--primary-color);
+    transition: 0.2s;
+ }

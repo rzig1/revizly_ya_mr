@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="./css/note.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <audio id="bgAudio" autoplay loop>
+        <source src="../audio/Productive Music For Work _ Chill Playlist_ZVb_yKMivqo.mp3" type="audio/mpeg">
+       
+      </audio>
+      
+
+    <header>
+          <h1> <a href="index.html">Revizly </a></h1>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="to do.html">Todo </a></li>
+              <li><a href="note.html">Notes</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="register">
+              <a href="register.html">Sign in, Log in</a>
+              <button id="muteButton" onclick="toggleMute()">
+                <img src="../assets/icons8-musique-24.png" alt="music-icon" id="musicIcon">
+              </button>
+      
+        </div>
+       
+        
+    </header>
+    <main>
+        <div id="container">
+            <div id="list-header">
+                <div id="addNoteDiv" onclick="popup()">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="blankDiv"></div>
+                <div class="blankDiv"></div>
+            </div>
+        
+            <div id="list-container">
+                <ul id="notes-list"></ul>
+            </div>
+        </div>
+        <script src="note.js"></script>
+    </main>
+
+    
+    <footer>
+        <div class="item-1">
+            <h1> Revizly TN</h1>
+        </div>
+        <div class="item-2">
+            <h3>Contact Us At</h3>
+            <p>revizlytn@gmail.com</p>
+        </div>
+        <div class="item-3" id="contact">
+            <a href="https://github.com/rzig1"> &copy Author: AbdelHedi Rziga</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/mastertodo.css">
+    <title>To DO App </title>
+</head>
+<body>
+    <audio id="bgAudio" autoplay loop>
+        <source src="../audio/Productive Music For Work _ Chill Playlist_ZVb_yKMivqo.mp3" type="audio/mpeg">
+       
+      </audio>
+      
+
+    <header>
+          <h1> <a href="index.html">Revizly </a></h1>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="to do.html">Todo </a></li>
+              <li><a href="note.html">Notes</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="register">
+              <a href="register.html">Sign in, Log in</a>
+              <button id="muteButton" onclick="toggleMute()">
+                <img src="../assets/icons8-musique-24.png" alt="music-icon" id="musicIcon">
+              </button>
+      
+        </div>
+       
+        
+    </header>
+    
+        <main>
+            <div class="todo_app">
+            <h1>Todo App</h1>
+            <form action="" id="task_form">
+                    <div class="input_container">
+                        <input type="text" id="task_input" placeholder="Enter Your Task">
+                        <button class="btn" type="submit"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+            </form>
+                <div class="list_container">
+                    <ul id="task_list">
+                        <li class="checked">
+                             <input type="checkbox" id="task_1">
+                              <label for="task_1">Task 1</label>
+                              <button class="btn_delete">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </li>
+                        <li>
+                             <input type="checkbox" id="task_2">
+                             <label for="task_2">Task 2</label>
+                             <button class="btn_delete">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </li>
+                        <li>
+                             <input type="checkbox" id="task_3">
+                             <label for="task_3">Task 3</label>
+                              <button class="btn_delete">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <script src="to do.js"></script>
+
+        <footer>
+            <div class="item-1">
+                <h1> Revizly TN</h1>
+            </div>
+            <div class="item-2">
+                <h3>Contact Us At</h3>
+                <p>revizlytn@gmail.com</p>
+            </div>
+            <div class="item-3" id="contact">
+                <a href="https://github.com/rzig1"> &copy Author: AbdelHedi Rziga</a>
+            </div>
+        </footer>
+</body>
+</html>

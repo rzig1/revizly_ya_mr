@@ -1,0 +1,109 @@
+<!-- <?php include 'db_connect.php'; ?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/masterlogin.css">
+    <title>Register</title>
+</head>
+<body>
+      
+      <audio id="bgAudio" autoplay loop>
+        <source src="../audio/Productive Music For Work _ Chill Playlist_ZVb_yKMivqo.mp3" type="audio/mpeg">
+       
+      </audio>
+      
+
+    <header>
+          <h1> <a href="index.html">Revizly </a></h1>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="to do.html">Todo </a></li>
+              <li><a href="note.html">Notes</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="register">
+              <a href="register.html">Sign in, Log in</a>
+              <button id="muteButton" onclick="toggleMute()">
+                <img src="../assets/icons8-musique-24.png" alt="music-icon" id="musicIcon">
+              </button>
+      
+        </div>
+       
+        
+    </header>
+    
+    <main>
+
+        <div class="container" id="container">
+            <div class="form_container sign_up">
+                <form action="">
+                    <h1>Create Account</h1>
+                    <div class="social_icons">
+                        <a href="#" class=""><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <span>Use your email for regsitration</span>
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="password" name="" id="" placeholder="Password">
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form_container sign_in">
+                <form action="">
+                    <h1>Sign In</h1>
+                    <div class="social_icons">
+                        <a href="#" class=""><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://github.com/rzig1" class=""><i class="fa-brands fa-github"></i></a>
+        
+                    </div>
+                    <span>Use your email password</span>
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="password" name="" id="" placeholder="Password">
+                    <a href="#">Forget Your Password</a>
+                    <button>LOG In</button>
+                </form>
+            </div>
+            <div class="toggle_container">
+                <div class="toggle">
+                    <div class="toggle_panel toggle_left">
+                        <h1>Welcome Back!</h1>
+                        <p>Enter your personal details to use all of site features</p>
+                        <button class="hidden" id="login">Log In</button>
+                    </div>
+                    <div class="toggle_panel toggle_right">
+                        <h1>Marhebe BIK, YA MR!</h1>
+                        <p>Register with your personal details to use all of site features</p>
+                        <button class="hidden" id="register">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+  
+
+    <script src="register.js
+    "></script>
+
+    <footer>
+        <div class="item-1">
+            <h1> Revizly TN</h1>
+        </div>
+        <div class="item-2">
+            <h3>Contact Us At</h3>
+            <p>revizlytn@gmail.com</p>
+        </div>
+        <div class="item-3" id="contact">
+            <a href="https://github.com/rzig1"> &copy Author: AbdelHedi Rziga</a>
+        </div>
+    </footer>
+</body>
+</html>

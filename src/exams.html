@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/exams.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+    <link rel="import" href="./pdf/2lm less5.pdf">
+
+    <title>Revizli TN</title>
+</head>
+<body>
+    <audio id="bgAudio" autoplay loop>
+        <source src="../audio/Productive Music For Work _ Chill Playlist_ZVb_yKMivqo.mp3" type="audio/mpeg">
+       
+      </audio>
+      
+
+    <header>
+          <h1> <a href="index.html">Revizly </a></h1>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="exams.html">Exams</a></li>
+              <li><a href="to do.html">Todo </a></li>
+              <li><a href="note.html">Notes</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="register">
+              <a href="register.html">Sign in, Log in</a>
+              <button id="muteButton" onclick="toggleMute()">
+                <img src="../assets/icons8-musique-24.png" alt="music-icon" id="musicIcon">
+              </button>
+      
+        </div>
+       
+        
+    </header>
+    <main >
+
+
+      <section>
+         <div class="card">
+            <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+            <h4>Algo I Exam</h4>
+            <h5>2LM</h5>
+            <div class="btn-pdf">
+                <button class="btn-read"> Read </button>
+                <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+            </div>
+         </div>
+         <div class="card">
+          <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+          <h4>Math Exam</h4>
+          <h5>2LM</h5>
+          <div class="btn-pdf">
+            <button class="btn-read"> Read </button>
+            <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+        </div>
+       </div>
+       <div class="card">
+         <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+         <h4>ALgebra Exam</h4>
+         <h5>2LM</h5>
+         <div class="btn-pdf">
+            <button class="btn-read"> Read </button>
+            <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+        </div>
+     </div>
+     <div class="card">
+       <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+       <h4>Design Exam</h4>
+       <h5>2LM</h5>
+       <div class="btn-pdf">
+        <button class="btn-read"> Read </button>
+        <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+    </div>
+    </div>
+    <div class="card">
+      <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+      <h4>Algo II Exam</h4>
+      <h5>2LM</h5>
+      <div class="btn-pdf">
+        <button class="btn-read"> Read </button>
+        <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+    </div>
+    </div>
+    <div class="card">
+      <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+      <h4>English I Exam</h4>
+      <h5>2LM</h5>
+      <div class="btn-pdf">
+        <button class="btn-read"> Read </button>
+        <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+    </div>
+    </div>
+
+    <div class="card">
+        <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+        <h4>English II Exam</h4>
+        <h5>2LM</h5>
+        <div class="btn-pdf">
+            <button class="btn-read"> Read </button>
+            <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+        <h4>Web Exam</h4>
+        <h5>2LM</h5>
+        <div class="btn-pdf">
+            <button class="btn-read"> Read </button>
+            <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+        <h4>Java I Exam</h4>
+        <h5>2LM</h5>
+        <div class="btn-pdf">
+            <button class="btn-read"> Read </button>
+            <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/icons8-pdf-2-100.png" alt="pdf_file">
+        <h4>Java II Exam</h4>
+        <h5>2LM</h5>
+        <div class="btn-pdf">
+            <button class="btn-read"> Read </button>
+            <button class="btn-download"><img src="../assets/icons8-télécharger-32 (1).png" alt="download"></button>
+        </div>
+    </div>
+</section>
+        
+        <h1>PDF Reader Example</h1>
+        <div id="pdf-container">
+
+        </div>
+        <script src="exams.js"></script>
+
+    </main>
+    <footer>
+        <div class="item-1">
+            <h1> Revizly TN</h1>
+        </div>
+        <div class="item-2" >
+            <h3>Contact Us At</h3>
+            <p>revizlytn@gmail.com</p>
+        </div>
+        <div class="item-3" id="contact">
+            <a href="https://github.com/rzig1"> &copy Author: AbdelHedi Rziga</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
